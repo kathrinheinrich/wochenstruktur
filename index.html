@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+<script>/* KHC 2026-11 · Auf Cloudflare (pages.dev) schützt Cloudflare Access den Zugang: keine eigene Login-Seite.
+   Auf der alten github.io-Adresse bleibt der Login aktiv, bis das Repo privat ist. */
+(function(){ if(!/\.pages\.dev$/i.test(location.hostname)) return;
+  try{  }catch(e){}
+  document.documentElement.classList.add('khc-cf');
+  var M={'cmkb-netzwerk-aktivator':'khc-app-netzwerk-aktivator','cmkb-story-line-de':'khc-app-storyline-de','cmkb-story-line-en':'khc-app-storyline-en','cmkb-werteexplorer':'khc-app-werteexplorer','gespraeche_kompass':'khc-app-gespraeche-kompass','cmkb-hidden-agenda':'khc-app-hidden-agenda','cmkb-stakeholder-netzwerk':'khc-app-stakeholder-netzwerk','cmkb-zuhoer-app':'khc-app-zuhoer','wochenstruktur':'khc-app-wochenstruktur','cmkb-PULSAR':'khc-pulsar'};
+  function umleiten(u){ var m=String(u||'').match(/^https?:\/\/kathrinheinrich\.github\.io\/([^\/?#]+)(.*)$/i); if(!m||!M[m[1]]) return u; return 'https://'+M[m[1]]+'.pages.dev'+(m[2]||'/'); }
+  var wo=window.open; window.open=function(u){ var a=[].slice.call(arguments); a[0]=umleiten(u); return wo.apply(window,a); };
+  document.addEventListener('click',function(e){ var a=e.target.closest&&e.target.closest('a[href]'); if(a){ var n=umleiten(a.href); if(n!==a.href) a.href=n; } },true);
+})();</script>
+<style>.khc-cf #login-screen,.khc-cf #accessGate{display:none!important} .khc-cf body.gate-locked{overflow:auto!important}</style>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Meine Wochenstruktur</title>
